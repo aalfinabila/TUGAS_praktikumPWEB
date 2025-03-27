@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Azzahro Alfi Nabila</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    const text = "Hello! I'm Azzahro Alfi Nabila";
+    let index = 0;
+    function typeEffect() {
+        if (index < text.length) {
+            document.getElementById("typing-text").innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, 100);
+        }
+    }
+    window.onload = typeEffect;
+</script>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>    
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="profile-container">
+            <div class="profile-card">
+                <img src="profile.jpg" alt="Azzahro Alfi Nabila" class="profile-pic">
+                <div class="profile-info">
+                    <h2>Azzahro Alfi Nabila</h2>
+                    <p class="job-title">Information System | Universitas Jember</p>
+                    <p><strong>Phone:</strong> 08123456789</p>
+                    <p><strong>Email:</strong> azzahro@email.com</p>
+                    <p><strong>Address:</strong> Surabaya, Jawa Timur</p>
+                    <p><strong>Date of Birth:</strong> August 11, 2005</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/aalfinabila" target="_blank" class="social-btn">Instagram</a>
+                        <a href="https://www.tiktok.com/alfinabilaaa" target="_blank" class="social-btn">TikTok</a>
+                        <a href="https://www.linkedin.com/azzahro-alfi-nabila" target="_blank" class="social-btn">LinkedIn</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2 id="typing-text"></h2> 
+        <p>
+            I'm a student of Information System at Universitas Jember. Possesses skills in leadership, communication, and team management. Experienced in managing work programs, organizing events, and building extensive networks..
+        </p>
+    </section>
+</body>
+</html>
